@@ -1,0 +1,56 @@
+/* Estilo geral da tela de promoção */
+.promotion-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.promotion-screen h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: pulse 1.5s ease-in-out infinite; /* Animação de pulsar */
+}
+
+.promotion-screen p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* Animação de pulso para o título */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
